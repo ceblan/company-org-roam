@@ -89,7 +89,9 @@ does not have a corresponding file."
                     (if current-file-path
                         (file-relative-name path current-file-path)
                       path)
-                    (org-roam--format-link-title title)))))
+                    ;;(org-roam--format-link-title title)
+                    ;;(org-roam-format-link title)
+										title))))
 
 (defun company-org-roam--filter-candidates (prefix candidates)
   "Filter CANDIDATES that start with PREFIX.
